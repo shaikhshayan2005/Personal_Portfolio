@@ -1,0 +1,966 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    scrollbar-color: smooth;
+    list-style: none;
+  }
+  
+  :root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color:white;
+    --main-color:#0ef;
+  }
+
+
+  html{
+    font-size: 15px;
+    overflow-x: hidden ;
+  }
+
+  
+  /* navbar css starts */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  
+  .logo {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #0ef;
+    text-shadow: 0 0 15px #0ef, 0 0 15px #0ef;
+    transform: scale(1.1);
+  }
+  
+ 
+  
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+  }
+  
+  .navbar a:hover,
+  .navbar a:active {
+    color: #0ef;
+    border-bottom: 3px solid #0ef;
+  }
+  
+  .contact {
+    padding: 8px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .contact:hover {
+    background-color: #0ef;
+    box-shadow: 0 0 15px #0ef;
+    color: white;
+  }
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 10%;
+    }
+  
+    .navbar {
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .contact {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 18px;
+    }
+  
+    .navbar a {
+      font-size: 14px;
+      margin: 0 5px;
+    }
+  
+    .contact {
+      font-size: 12px;
+      padding: 6px 15px;
+    }
+  }
+
+
+
+
+/* About Me Section */
+.aboutme {
+    background: #262525;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically by default */
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left */
+    text-align: left;
+    margin: 0 auto; /* Center the entire section */
+    padding: 20px;
+    width: 90%; /* Ensure content doesn't exceed screen width */
+    max-width: 1200px; /* Limit maximum width for large screens */
+}
+
+/* General styling for the content */
+.habout span {
+    font-size: 2.5rem; /* Adjust font size for responsiveness */
+    color: #0ef;
+    margin-top: 20px;
+}
+
+/* Section styling */
+.aboutme .newsection,
+.aboutme .oldsection {
+    background: #262525;
+    width: 100%; /* Full width for small screens */
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+/* Paragraph styling */
+.paragraph {
+    padding: 2rem;
+    margin-left: 30px;
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+    color: #ffffff;
+    max-width: 100%; /* Ensure paragraph doesn't exceed container */
+    line-height: 1.8rem;
+}
+
+/* Image styling */
+.aboutimage {
+    width: 100%;
+    max-width: 300px; /* Reduce image size for small screens */
+    margin: 20px auto; /* Center image with margin */
+    border: 3px solid transparent;
+    filter: drop-shadow(0 0 20px #0ef);
+}
+
+/* Media Query for Large Screens (greater than 1265px) */
+@media (min-width: 1266px) {
+    .aboutme {
+        flex-direction: row; /* Arrange sections side by side */
+        justify-content: space-between;
+        max-width: 1400px; /* Increase max width for large screens */
+        margin-left:  auto; /* Center the entire section on the page */
+        padding: 20px;
+        margin-bottom: 40px; /* Add padding for consistency */
+    }
+
+    .aboutme .newsection{
+        width: 55% ; /* Adjust width for side-by-side layout */
+        display: flex;
+        flex-direction: column; /* Ensure content stacks correctly */
+        justify-content: center; /* Center content within each section */
+        align-items: flex-start; /* Align items to the left */
+        text-align: left; /* Ensure text alignment is left */
+        padding: 20px; /* Add padding for spacing */
+    }
+    .aboutme .oldsection {
+        width:  45%; /* Adjust width for side-by-side layout */
+        display: flex;
+        flex-direction: column; /* Ensure content stacks correctly */
+        justify-content: center; /* Center content within each section */
+        align-items: flex-start; /* Align items to the left */
+        text-align: left; /* Ensure text alignment is left */
+    
+    }
+
+    .habout {
+        margin-top: 100px;
+        /* text-align: left; Center content horizontally */
+        width: 100%;
+        /* margin-left: 20px; Ensure full width for centering */
+    }
+
+    .habout span {
+        margin-left: 15%; /* Add margin on the left */
+        font-size: 4rem; /* Increase font size for large screens */
+    }
+
+    .aboutimage {
+        max-width: 500px;
+        margin-top: 8vh;
+    }
+
+    .paragraph {
+        
+        font-size: 1.8rem; /* Larger font size for readability */
+        line-height: 2.2rem; /* Improve readability with more line height */
+        margin-top: auto;
+        display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+} /* Add space above the paragraph */
+    }
+
+
+/* Media Query for Small Screens (less than 638px) */
+@media (max-width: 1266px) {
+    .aboutme {
+        flex-direction: column; /* Stack sections vertically */
+        justify-content: center;
+        align-items: flex-start; /* Align content to the left */
+    }
+
+    .aboutme .newsection,
+    .aboutme .oldsection {
+        width: 100%; /* Full width for small screens */
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+.habout{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+    .habout span {
+        
+        text-align: center; /* Remove margin for small screens */
+        font-size: 4rem; /* Smaller font size for small screens */
+    }
+
+    .aboutimage {
+        max-width: 250px; /* Smaller image size */
+    }
+
+    .paragraph {
+        font-size: 1.8rem; /* Smaller font size for small screens */
+        width: fit-content;
+        line-height: 1.4;
+        text-align: center;
+        display: block;
+    }
+}
+
+
+
+/* Skills section */
+.skills {
+    background: #fff;
+    height: 80vh;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 20px;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    margin: -100px auto 0;
+    margin-top: 20px;
+}
+
+.heading {
+    color: #262525;
+    padding: 3rem;
+    font-size: 4vw; /* Changed from 4rem to 4vw for responsiveness */
+    margin: 10px auto 0;
+    display: flex;
+    text-align: center;
+    width: 100%; /* Changed from 50px to 100% to fit the screen */
+    max-width: 800px; /* Optional: set a max-width for large screens */
+    margin-right: auto; /* Center the heading */
+    margin-left: auto;
+}
+
+.skills h1 {
+     
+    margin-left: 30px;
+    font-size: 8vh; /* Adjust margin for responsiveness */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1253px) {
+    .heading {
+        font-size: 6vw; /* Increase font size slightly on smaller screens */
+        padding: 2rem; /* Reduce padding for smaller screens */
+    }
+
+    .skills h1 {
+        margin-top: 10vw; /* Adjust margin for smaller screens */
+        margin-left: auto;
+        justify-content: center;
+        font-size: 6vh;  /* Adjust margin for smaller screens */
+    }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 8vw; /* Increase font size further for very small screens */
+        padding: 1rem; /* Further reduce padding */
+    }
+
+    .skills h1 {
+        margin-top: 15vw; /* Adjust margin for very small screens */
+        margin-left: 2vw; /* Adjust margin for very small screens */
+    }
+}
+
+.containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 5rem;
+}
+
+.card_box,
+.card_box1,
+.card_box2,
+.card_box3 {
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);
+    position: relative;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card_box:hover,
+.card_box1:hover,
+.card_box2:hover,
+.card_box3:hover {
+    transform: scale(0.9);
+}
+
+.card_box span,
+.card_box1 span,
+.card_box2 span,
+.card_box3 span {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_box span::before,
+.card_box1 span::before,
+.card_box2 span::before,
+.card_box3 span::before {
+    content: '⭐⭐⭐⭐';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background-image: linear-gradient(45deg, #ff6547 0%, #ffb144 51%, #ff7053 100%);
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.23);
+}
+
+.card_box span::after,
+.card_box1 span::after,
+.card_box2 span::after,
+.card_box3 span::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    z-index: -1;
+    box-shadow: 140px -140px #cc3f47;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.card_box h1,
+.card_box1 h1,
+.card_box2 h1,
+.card_box3 h1 {
+    margin: 110px 50px;
+    color: #F09819;
+    font-size: 30px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+        margin: 0 auto;
+        column-gap: inherit;
+    }
+
+    .containers {
+        flex: 1 1 45%;
+        margin: 8px 0;
+        min-width: 200px;
+    }
+
+    .card_box,
+    .card_box1,
+    .card_box2,
+    .card_box3 {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 90%;
+        margin-top: auto;
+    }
+
+    .skills {
+      
+        margin-bottom: 20px;
+    }
+
+    .containers {
+        flex: 1 1 100%;
+        margin: 8px 0;
+        min-width: 150px;
+    }
+
+    .card_box,
+    .card_box1,
+    .card_box2,
+    .card_box3 {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .heading {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+}.experience {
+    background-color: #262525;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+}
+
+.experience h1 {
+    color: white;
+    font-size: 3vw; /* Responsive font-size */
+    margin-top: 8vh; /* Adjusted top margin */
+    margin-left: 0; /* Center the heading */
+    text-align: center; /* Center the heading */
+}
+
+.experience .expheading {
+    color: #0ef;
+    font-size: 2.5vw; /* Responsive font-size */
+    margin-top: 5vh; /* Adjusted top margin */
+    text-align: center; /* Center the sub-heading */
+}
+
+.exp1, .exp2, .exp3 {
+    display: flex;
+    flex-direction: column; /* Horizontal layout for large screens */
+    justify-content: space-around; /* Distribute space between items */
+    height: auto; /* Responsive height */
+    background-color: #262525;
+    color: #3877ff;
+    align-items: center;
+    padding: 20px; /* Added padding for spacing */
+    
+    margin-bottom: 2vh; /* Add spacing between experience blocks */
+}
+
+/* .expheading h1{
+    text-align: center;
+    font-size: 4rem;
+    
+    color: #0ef;
+}
+.expheading2 h1{
+    text-align: center;
+    font-size: 4rem;
+    color: #0ef;
+}
+.expheading3 h1{
+    text-align: center;
+        font-size: 4rem;
+        
+        color: #0ef;
+} */
+
+.expheading h1,
+.expheading2 h1,
+.expheading3 h1 {
+    text-align: center;
+    font-size: 3vw; /* Responsive font-size based on viewport width */
+    color: #0ef;
+    margin-top: 6vh; /* Add some top margin for better spacing */
+}
+
+/* Responsive adjustments for larger screens */
+@media screen and (min-width: 1200px) {
+    .expheading h1,
+    .expheading2 h1,
+    .expheading3 h1 {
+        font-size: 3rem;
+        margin-top: 5vh;
+        margin-right: 50vh;
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .expheading h1,
+    .expheading2 h1,
+    .expheading3 h1 {
+        font-size: 2.8rem; /* Smaller font-size for tablets */
+        margin-top: 4vh; /* Adjusted top margin */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .expheading h1,
+    .expheading2 h1,
+    .expheading3 h1 {
+        font-size: 2.2rem; /* Smaller font-size for mobile devices */
+        margin-top: 3vh; /* Adjusted top margin */
+    }
+}
+.exp1 .html-para, .exp3 .html-para3 {
+    color: #fff;
+    font-size: 1.8rem;
+    width: fit-content;
+    line-height: 1.4;
+    text-align: center;
+    width: 60%;
+}
+
+.expimage2 img{
+    width: 30vh;
+
+}
+.exp2 .html-para2 {
+    color: #fff;
+    font-size: 1.8rem;
+    width: fit-content;
+    line-height: 1.4;
+    text-align: center;
+    width: 60%
+}
+
+.expimage img {
+    width: 25vw; /* Adjusted width */
+    height: auto;
+    margin: 0; /* Remove margins for better alignment */
+}
+
+/* Responsive adjustments for laptops and smaller devices */
+@media screen and (max-width: 1024px) {
+    .experience h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .expheading {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .exp1, .exp2, .exp3 {
+        flex-direction: column;
+        height: auto;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .html-para, .html-para2, .html-para3 {
+        width: fit-content;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .expimage img {
+        margin: 20px auto;
+    }
+    .expimage2 img {  
+        width: 50%;
+        margin-left: 15vh;
+    }
+}
+
+/* Responsive adjustments for tablets */
+@media screen and (max-width: 768px) {
+    .experience h1 {
+        font-size: 2rem;
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .expheading {
+        font-size: 1.8rem;
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .html-para, .html-para2, .html-para3 {
+        font-size: 1.2rem;
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .expimage img {
+        margin: 10px auto;
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media screen and (max-width: 480px) {
+    .experience h1 {
+        font-size: 1.5rem;
+        margin-top: 4vh;
+        text-align: center;
+    }
+
+    .expheading {
+        font-size: 1.2rem;
+        margin-top: 1vh;
+        text-align: center;
+    }
+
+    .html-para, .html-para2, .html-para3 {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .expimage img {
+        width: 60%;
+        margin-left: 70px;
+    }
+
+    .expimage2 img {
+        width: 60%;
+        margin-left: 70px;
+    }
+}
+
+/* Enhanced responsiveness for large screens */
+@media screen and (min-width: 1200px) {
+    .experience h1 {
+        font-size: 2.8vw;
+        margin-top: 8vh;
+        text-align: center; /* Center the heading */
+    }
+
+    .expheading {
+        font-size: 2.2vw;
+        margin-top: 6vh;
+        text-align: center; /* Center the sub-heading */
+    }
+
+    .expheading2, .expheading3 {
+        font-size: 2.2vw;
+        margin-top: 6vh;
+        text-align: center; /* Center the sub-heading */
+    }
+
+    .exp1, .exp2, .exp3 {
+        flex-direction: row; /* Horizontal layout for large screens */
+        justify-content: space-around; /* Distribute space between items */
+        height: auto;
+        width: 100%; /* Adjust width for better alignment */
+        margin-bottom: 3vh; /* Add spacing between experience blocks */
+    }
+
+    .html-para, .html-para2, .html-para3 {
+        font-size: 1.5rem; /* Slightly larger font-size */
+        margin-left: 0;
+    }
+
+    .expimage img {
+        width: 20vw; /* Adjusted width */
+        margin: 0; /* Remove margins for better alignment */
+    }
+}
+
+
+
+
+
+.footer {
+    background-color: #151414;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+
+}
+
+.footer-section h2 {
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer-section ul,
+/* Target unordered lists within the footer section */
+.footer-section ol {
+    /* Target ordered lists within the footer section */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.social-media a:hover {
+    background: linear-gradient(#fff, #0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+
+
+
+
+/* Education page */
+.myedu p {
+    color: #ffffff;
+    width: 38rem;
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+    margin-top: -20px;
+    margin-left: 120px;
+
+
+}
+
+.edunav {
+    width: 100%;
+    margin-top: 15vh;
+    height: 4rem;
+    background: #262525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edunav h1 {
+    color: #ffffff;
+
+
+}
+
+.myedu {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 75px;
+}
+
+.mainedu {
+    color: rgb(242, 216, 21);
+    margin-top: 100px;
+    margin-left: 190px;
+    font-size: 2.5rem;
+}
+
+.metricimage {
+    margin-left: 300px;
+    margin-top: -90px;
+
+}
+
+.metricimage .imagebeacon {
+    height: 250px;
+}
+
+.myedu .imagebeacon {
+    border-radius: 150px;
+}
+
+/* Media Queries for Responsive Design  of education*/
+@media (max-width: 1024px) {
+    .mainedu {
+        margin-left: 50px;
+        font-size: 2rem;
+    }
+
+    .myedu {
+        margin-left: 50px;
+    }
+
+    .myedu p {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .metricimage {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .metricimage .imagebeacon {
+        height: 200px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainedu {
+        margin-left: 20px;
+        font-size: 1.8rem;
+    }
+
+    .myedu {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .myedu p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .metricimage {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .metricimage .imagebeacon {
+        height: 180px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainedu {
+        margin-left: 10px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .myedu {
+        margin-left: 10px;
+    }
+
+    .myedu p {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .metricimage .imagebeacon {
+        height: 150px;
+    }
+}

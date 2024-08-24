@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: #262525;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .projectnav {
+            width: 100%;
+            height: 4rem;
+            margin-top: 10vh;
+            background: #387ff3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .projectnav h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            /* Creates a grid with two columns */
+            gap: 20px;
+            /* Space between grid items */
+            padding: 20px;
+        }
+
+        .project {
+            box-sizing: border-box;
+            /* Include padding and borders in the width */
+        }
+
+        .card {
+            background-color: #ffffff;
+            text-align: left;
+            border-radius: 0.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .imageproject {
+            
+            width: 100%;
+            height: 150px;
+           
+            border-radius: 0.5rem;
+        }
+
+        .content {
+            margin-top: 10px;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #111827;
+            margin: 0 0 10px 0;
+        }
+
+        .project-description {
+            color: #6B7280;
+            font-size: 0.875rem;
+            margin: 0 0 10px 0;
+        }
+
+        .desactivate {
+            display: inline-flex;
+            padding: 0.5rem 1rem;
+            background-color: #DC2626;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 500;
+            justify-content: center;
+            border-radius: 0.375rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .desactivate:hover {
+            background-color: #b91c1c;
+        }
+        .cardweb {
+            background-color: #ffffff;
+            text-align: left;
+            border-radius: 0.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 410px;
+        }
+        @media (max-width: 768px) {
+    .projectnav {
+        height: auto;
+        padding: 10px;
+        margin-top: 15vh;
+    }
+
+    .projectnav h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-description {
+        font-size: 0.75rem;
+    }
+
+    .desactivate {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Navbar Start-->
+        <a href="#" class="logo"><span>Sha</span>yan</a>
+        <div class="navbar">
+            <a href="index.html" class="active">protfolio</a>
+            <a href="Education.html" class="active" >Education</a>
+            <a href="Project.html" class="active" >Projects</a>
+            <!-- Navbar end-->
+
+            
+    </header>
+    <div class="projectnav">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="projects-container">
+        <div class="project">
+            <div class="card">
+                <img src="newsimage1.png" alt="Project 1" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">NewsMonkey</h2>
+                    <p class="project-description">News Monkey is a dynamic website built with React.js that leverages an external API to fetch and display news from various regions around the world. The platform offers users a seamless experience in accessing up-to-date news content tailored to their location."
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="card">
+                <img src="textutilsimage .png" alt="Project 2" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">Textutils</h2>
+                    <p class="project-description">TextUtils is a React.js-based website designed to assist users in transforming text in multiple ways. It offers features such as converting text to uppercase or lowercase, among other formatting options, providing a versatile tool for text manipulation.
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="card">
+                <img src="snake.PNG" alt="Project 3" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">Snake Water Gun </h2>
+                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+                        natus temporibus repudiandae veniam ullam itaque iste, voluptas, voluptatem cumque doloribus
+                        distinctio accusantium voluptatibus ad, iure repellendus possimus perspiciatis maiores culpa?
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="card">
+                <img src="bankmanagement image.jpeg" alt="Project 4" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">Bank Management System</h2>
+                    <p class="project-description">The Bank Management System is a Java-based project that enables users to be added to an SQL database and facilitates various banking operations, including transactions, deposits, and withdrawals.
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <div class="card">
+                <img src="webpage1.png" alt="Project 4" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">Travel Agency Page </h2>
+                    <p class="project-description">This is a simple webpage crafted with HTML and CSS, featuring interactive hover effects to enhance user experience and visual appeal. The design combines straightforward layout and styling.
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project">
+            <div class="card">
+                <img src="more123.png" alt="Project 4" class="imageproject">
+                <div class="content">
+                    <h2 class="project-title">Education Website </h2>
+                    <p class="project-description">This is a simple educational website design built using basic HTML and CSS. It provides a clean and straightforward layout, focusing on clear presentation and easy navigation."
+                    </p>
+                    <button class="desactivate">View Project</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section contact-info">
+                <h2>Contact Me</h2>
+                <p>Email: shaikhshayanshaikh2005@gmail.com</p>
+                <p>Phone: +92 334 028 0 888</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h2>Follow Me</h2>
+                <a href="https://www.facebook.com/shayan.shaikh.376" target="_blank" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sheikh-shayan-476402286/" target="_blank" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~014ec6408c716606ce" target="_blank" title="Upwork">
+                    <i class="fa-brands fa-upwork"></i>
+                </a>
+                <a href="https://stackoverflow.com/users/26594821/user26594821" target="_blank" title="Stack Overflow">
+                    <i class="fa-brands fa-stack-overflow"></i>
+                </a>
+                <a href="https://github.com/shaikhshayan2005" target="_blank" title="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#work">Skills</a></li>
+                    <li><a href="index.html#services">Experiences</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shayan Sheikh. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
