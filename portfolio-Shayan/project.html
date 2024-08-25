@@ -56,10 +56,10 @@
         }
 
         .imageproject {
-            
+
             width: 100%;
             height: 150px;
-           
+
             border-radius: 0.5rem;
         }
 
@@ -95,8 +95,9 @@
         }
 
         .desactivate:hover {
-            background-color: #b91c1c;
+            background-color: #d24848;
         }
+
         .cardweb {
             background-color: #ffffff;
             text-align: left;
@@ -106,46 +107,48 @@
             margin-bottom: 20px;
             height: 410px;
         }
+
         @media (max-width: 768px) {
-    .projectnav {
-        height: auto;
-        padding: 10px;
-        margin-top: 15vh;
-    }
+            .projectnav {
+                height: auto;
+                padding: 10px;
+                margin-top: 15vh;
+            }
 
-    .projectnav h1 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
+            .projectnav h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
 
-    .projects-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
-    }
+            .projects-container {
+                grid-template-columns: 1fr;
+                /* Single column on smaller screens */
+            }
 
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
 
-    .footer-section {
-        margin-bottom: 10px;
-    }
-}
+            .footer-section {
+                margin-bottom: 10px;
+            }
+        }
 
-@media (max-width: 480px) {
-    .project-title {
-        font-size: 1rem;
-    }
+        @media (max-width: 480px) {
+            .project-title {
+                font-size: 1rem;
+            }
 
-    .project-description {
-        font-size: 0.75rem;
-    }
+            .project-description {
+                font-size: 0.75rem;
+            }
 
-    .desactivate {
-        padding: 0.5rem;
-        font-size: 0.875rem;
-    }
-}
+            .desactivate {
+                padding: 0.5rem;
+                font-size: 0.875rem;
+            }
+        }
     </style>
 </head>
 
@@ -156,11 +159,11 @@
         <a href="#" class="logo"><span>Sha</span>yan</a>
         <div class="navbar">
             <a href="index.html" class="active">protfolio</a>
-            <a href="Education.html" class="active" >Education</a>
-            <a href="Project.html" class="active" >Projects</a>
+            <a href="Education.html" class="active">Education</a>
+            <a href="Project.html" class="active">Projects</a>
             <!-- Navbar end-->
 
-            
+
     </header>
     <div class="projectnav">
         <h1>My Projects</h1>
@@ -172,9 +175,14 @@
                 <img src="newsimage1.png" alt="Project 1" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">NewsMonkey</h2>
-                    <p class="project-description">News Monkey is a dynamic website built with React.js that leverages an external API to fetch and display news from various regions around the world. The platform offers users a seamless experience in accessing up-to-date news content tailored to their location."
+                    <p class="project-description">News Monkey is a dynamic website built with React.js that leverages
+                        an external API to fetch and display news from various regions around the world. The platform
+                        offers users a seamless experience in accessing up-to-date news content tailored to their
+                        location."
                     </p>
-                    <button class="desactivate">View Project</button>
+                    <a href="https://github.com/shaikhshayan2005/News_App/tree/main/news-app" target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -184,9 +192,13 @@
                 <img src="textutilsimage .png" alt="Project 2" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">Textutils</h2>
-                    <p class="project-description">TextUtils is a React.js-based website designed to assist users in transforming text in multiple ways. It offers features such as converting text to uppercase or lowercase, among other formatting options, providing a versatile tool for text manipulation.
+                    <p class="project-description">TextUtils is a React.js-based website designed to assist users in
+                        transforming text in multiple ways. It offers features such as converting text to uppercase or
+                        lowercase, among other formatting options, providing a versatile tool for text manipulation.
                     </p>
-                    <button class="desactivate">View Project</button>
+                    <a href="https://github.com/shaikhshayan2005/TextUtils/tree/main/my-app" target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -196,11 +208,14 @@
                 <img src="snake.PNG" alt="Project 3" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">Snake Water Gun </h2>
-                    <p class="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
-                        natus temporibus repudiandae veniam ullam itaque iste, voluptas, voluptatem cumque doloribus
-                        distinctio accusantium voluptatibus ad, iure repellendus possimus perspiciatis maiores culpa?
-                    </p>
-                    <button class="desactivate">View Project</button>
+                    <p class="project-description"> The game is a classic match between the user and the computer
+                        system. Each player takes turns, with the computer generating its own choice randomly. After
+                        both the user and the computer have made their selections, the results are immediately
+                        displayed.</p>
+                    <a href="https://github.com/shaikhshayan2005/Snake_Water_Gun_Game/blob/main/snake%20water%20gun.cpp"
+                        target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -210,9 +225,14 @@
                 <img src="bankmanagement image.jpeg" alt="Project 4" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">Bank Management System</h2>
-                    <p class="project-description">The Bank Management System is a Java-based project that enables users to be added to an SQL database and facilitates various banking operations, including transactions, deposits, and withdrawals.
+                    <p class="project-description">The Bank Management System is a Java-based project that enables users
+                        to be added to an SQL database and facilitates various banking operations, including
+                        transactions, deposits, and withdrawals.
                     </p>
-                    <button class="desactivate">View Project</button>
+                    <a href="https://github.com/shaikhshayan2005/Management/tree/main/BANK%20MANAGMENT%20SYSTEM"
+                        target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -223,9 +243,13 @@
                 <img src="webpage1.png" alt="Project 4" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">Travel Agency Page </h2>
-                    <p class="project-description">This is a simple webpage crafted with HTML and CSS, featuring interactive hover effects to enhance user experience and visual appeal. The design combines straightforward layout and styling.
+                    <p class="project-description">This is a simple webpage crafted with HTML and CSS, featuring
+                        interactive hover effects to enhance user experience and visual appeal. The design combines
+                        straightforward layout and styling.
                     </p>
-                    <button class="desactivate">View Project</button>
+                    <a href="https://github.com/shaikhshayan2005/Travel_agency/tree/main/webpage" target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -236,9 +260,13 @@
                 <img src="more123.png" alt="Project 4" class="imageproject">
                 <div class="content">
                     <h2 class="project-title">Education Website </h2>
-                    <p class="project-description">This is a simple educational website design built using basic HTML and CSS. It provides a clean and straightforward layout, focusing on clear presentation and easy navigation."
+                    <p class="project-description">This is a simple educational website design built using basic HTML
+                        and CSS. It provides a clean and straightforward layout, focusing on clear presentation and easy
+                        navigation."
                     </p>
-                    <button class="desactivate">View Project</button>
+                    <a href="https://github.com/shaikhshayan2005/Educational_Website" target="_blank">
+                        <button class="desactivate">View Project</button>
+                    </a>
                 </div>
             </div>
         </div>
